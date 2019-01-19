@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300')
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300|Kaushan+Script')
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css")
 @import variables
 
 *
@@ -7,3 +8,42 @@
 
 body
   background: $bg-primary
+
+nav
+  background-color: $bg-primary
+  overflow: hidden
+  position: fixed
+  width: 100%
+  text-align: center
+  font-family: $font-primary
+
+.header
+    margin: 0 auto
+    max-width: 1024px
+    a
+      display: inline-block
+      color: #b3b3b3
+      text-align: center
+      height: 48px
+      line-height: 48px
+      width: 15%
+      text-decoration: none
+      font-size: 10pt
+      i
+        padding-right: 8px
+      &:hover
+        color: #00ccff
+      .icon
+        display: none
+        
+#owner-logo
+    width: 15%
+    text-align: center
+    font-family: $font-primary
+    font-size: 12pt
+    letter-spacing: 2pt
+    svg
+      path
+        fill: #b3b3b3
+      &:hover path
+        fill: #00ccff
